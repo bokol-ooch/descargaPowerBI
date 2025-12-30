@@ -1,3 +1,24 @@
 para crear las credenciales para los reportes ir a:
 
-https://entra.microsoft.com/#home -> aplicaciones empresariales -> nueva -> cree su propia aplicacion ->
+https://entra.microsoft.com/#home -> registro de aplicaciones -> nuevo registro -> 
+- nombrar
+-seleccionar "Solo cuentas en este directorio organizativo"
+- registar
+asi obtenemos:
+* Id. de aplicación (cliente) → client_id
+* Id. de directorio (inquilino) → tenant_id
+
+nos vamos a certificados y secretos -> nuevo secreto de cliente ->
+
+- descripcion
+- caducidad
+
+asi obtenemos:
+
+* client_secret = "EL_VALOR_DEL_SECRETO"
+
+Vamos a permisos de api -> agregar un permiso -> powerbi service -> permisos de apicacion -> leer y escribir todo
+
+En power bi dar permiso en cada área de trabajo a la aplicación
+
+
